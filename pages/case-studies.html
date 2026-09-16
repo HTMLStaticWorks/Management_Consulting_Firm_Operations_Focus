@@ -14,6 +14,23 @@
   <link rel="stylesheet" href="../assets/css/dark-mode.css" />
   <link rel="stylesheet" href="../assets/css/rtl.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+  <style>
+    /* Case-studies has 6 cards — reset global nth-child(3) centering so all cards
+       align in a clean 2-column × 3-row grid at tablet width (≤900px) */
+    @media (max-width: 900px) {
+      .products-grid .product-card:nth-child(3) {
+        grid-column: auto;
+        justify-self: stretch;
+        max-width: 100%;
+      }
+    }
+    @media (max-width: 600px) {
+      .products-grid .product-card:nth-child(3) {
+        grid-column: auto;
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -79,8 +96,7 @@
         <!-- Case Study 1 -->
         <div class="product-card reveal reveal-delay-1">
           <div class="product-card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Global Industrial Turnaround" class="product-card-img" loading="lazy" />
-            <span class="product-badge">Industrial OEM</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNDJu9Cy9dd3AYN28BgT5l8ZNg63amPKwd8kybWnUst_3qv8DPk9ywsqF1&s=10" alt="Global Industrial Turnaround" class="product-card-img" loading="lazy" />
           </div>
           <div class="product-card-body">
             <span class="shop-tag">$140M EBITDA Value</span>
@@ -97,8 +113,7 @@
         <!-- Case Study 2 -->
         <div class="product-card reveal reveal-delay-2">
           <div class="product-card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="Logistics Network Optimization" class="product-card-img" loading="lazy" />
-            <span class="product-badge" style="background:var(--espresso);color:var(--gold)">Logistics</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuu8V4BZ4NmmR-vqCIXFGDIVmVKO1frwibALNbLsVlbIoHInO4M1sHOeU&s=10" alt="Logistics Network Optimization" class="product-card-img" loading="lazy" />
           </div>
           <div class="product-card-body">
             <span class="shop-tag">$42M Cost Reduction</span>
@@ -115,8 +130,7 @@
         <!-- Case Study 3 -->
         <div class="product-card reveal reveal-delay-3">
           <div class="product-card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80" alt="Healthcare Clinical Operations" class="product-card-img" loading="lazy" />
-            <span class="product-badge">Healthcare</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5MUMws0RQZV01vHsqOzYGglKeHoU3Vkrx3byT7IzqG7YZZ4Dwwp55p80&s=10" alt="Healthcare Clinical Operations" class="product-card-img" loading="lazy" />
           </div>
           <div class="product-card-body">
             <span class="shop-tag">$28M EBITDA Impact</span>
@@ -133,8 +147,7 @@
         <!-- Case Study 4 -->
         <div class="product-card reveal reveal-delay-1">
           <div class="product-card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" alt="Energy Plant Transformation" class="product-card-img" loading="lazy" />
-            <span class="product-badge">Energy & Utilities</span>
+            <img src="https://www.ten.com/sites/energies/files/styles/original_sm/public/2026-01/nfe-teams-in-doha.jpg?itok=WYpRsLxb" alt="Energy Plant Transformation" class="product-card-img" loading="lazy" />
           </div>
           <div class="product-card-body">
             <span class="shop-tag">$85M Annual Savings</span>
@@ -151,8 +164,7 @@
         <!-- Case Study 5 -->
         <div class="product-card reveal reveal-delay-2">
           <div class="product-card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="CPG Post Merger Integration" class="product-card-img" loading="lazy" />
-            <span class="product-badge">CPG & Retail</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS963piP0sb7HmSRJfR7WRLzz6EEAqd6261sTLT0trY_NFapjAxnwydh9I&s=10" alt="CPG Post Merger Integration" class="product-card-img" loading="lazy" />
           </div>
           <div class="product-card-body">
             <span class="shop-tag">$62M Synergy Captured</span>
@@ -169,8 +181,7 @@
         <!-- Case Study 6 -->
         <div class="product-card reveal reveal-delay-3">
           <div class="product-card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Aerospace Components Quality" class="product-card-img" loading="lazy" />
-            <span class="product-badge">Aerospace</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR13K9N9mlhGBUlb3iwhmXFoNFZzTWnZy1s_c-A0WETrw&s=10" alt="Aerospace Components Quality" class="product-card-img" loading="lazy" />
           </div>
           <div class="product-card-body">
             <span class="shop-tag">Quality Redesign</span>

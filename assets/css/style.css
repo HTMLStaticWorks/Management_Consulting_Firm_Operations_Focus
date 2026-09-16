@@ -1955,16 +1955,18 @@ main {
 .pricing-features {
   margin-bottom: 2rem;
   flex-grow: 1;
+  width: 100%;
 }
 
 .pricing-feature {
   display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.5rem 0;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.55rem 0;
   border-bottom: 1px solid var(--border);
   font-size: 0.88rem;
-  justify-content: center;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 .pricing-card.featured .pricing-feature {
@@ -1978,8 +1980,10 @@ main {
 
 .pricing-feature i {
   color: var(--gold);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   width: 16px;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
 }
 
 @media (max-width: 900px) {
