@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Advisory — Vanguard Operations Group</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="../assets/images/favicon.png" type="image/png" />
+
+  <link rel="apple-touch-icon" href="../assets/images/favicon.png" />
+  
+  <meta name="description" content="Schedule an executive consultation or submit an operational transformation enquiry to Vanguard Operations Group consulting partners." />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+  <link rel="stylesheet" href="../assets/css/rtl.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="brand">
+        <div class="brand-logo"><i class="ri-line-chart-line"></i></div>
+        <div><span class="brand-name">Vanguard <span>Operations</span></span></div>
+      </a>
+      <nav class="nav-desktop">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="case-studies.html" class="nav-link">Case Studies</a>
+        <a href="industries.html" class="nav-link">Industries Served</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle"><i class="ri-moon-line"></i></button>
+        <button class="icon-btn rtl-toggle" aria-label="Toggle RTL" title="Toggle Direction">RTL</button>
+        <a href="enquire.html" class="btn btn-primary btn-sm"><i class="ri-mail-send-line"></i> Enquire Now</a>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu">
+    <a href="../index.html" class="mobile-nav-link">Home</a>
+    <a href="home2.html" class="mobile-nav-link">Home 2</a>
+    <a href="services.html" class="mobile-nav-link">Services</a>
+    <a href="case-studies.html" class="mobile-nav-link">Case Studies</a>
+    <a href="industries.html" class="mobile-nav-link">Industries Served</a>
+    <a href="contact.html" class="mobile-nav-link active">Contact</a>
+    <div class="mobile-actions">
+      <button class="icon-btn theme-toggle" aria-label="Theme"><i class="ri-moon-line"></i></button>
+      <button class="icon-btn rtl-toggle" aria-label="RTL">RTL</button>
+      <a href="enquire.html" class="btn btn-primary btn-sm"><i class="ri-mail-send-line"></i> Enquire Now</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="page-hero" style="padding-top:calc(var(--header-h) + 3rem)">
+      <div class="container">
+        <span class="section-label" style="color:var(--gold-light)">Executive Consultation</span>
+        <h1>Initiate Your <em style="font-style:italic;color:var(--gold-light)">Transformation</em></h1>
+        <p>Contact Vanguard's senior operational partners for confidential advisory briefings, diagnostic assessments, or project inquiries.</p>
+      </div>
+    </section>
+
+    <!-- ── SECTION 1: Contact Form + Info ── -->
+    <section class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Connect With Us</span>
+          <h3>Submit Operational <em style="font-style:italic;color:var(--gold)">Enquiry</em></h3>
+          <div class="divider-gold"></div>
+          <p class="section-subtitle">Our consulting partners respond within 4 business hours to arrange an executive briefing. All submissions are held under strict non-disclosure terms.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="ri-map-pin-line"></i></div>
+              <div class="contact-item-text">
+                <strong>Global Headquarters</strong>
+                <span>575 Fifth Avenue, 28th Floor, New York, NY 10017, USA</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="ri-building-4-line"></i></div>
+              <div class="contact-item-text">
+                <strong>Regional Hubs</strong>
+                <span>London (City), Singapore (Marina Bay), Zurich (Paradeplatz)</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="ri-phone-line"></i></div>
+              <div class="contact-item-text">
+                <strong>Executive Direct Line</strong>
+                <span>+1 (212) 555-0190</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="ri-mail-send-line"></i></div>
+              <div class="contact-item-text">
+                <strong>Advisory Email</strong>
+                <span>advisory@vanguardops.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="ri-shield-check-line"></i></div>
+              <div class="contact-item-text">
+                <strong>Confidentiality Assurance</strong>
+                <span>Standard NDA protocol enforced on all executive dialogues.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="contact-form-wrap" style="background:var(--bg-card);padding:2.5rem;border-radius:var(--radius-lg);border:1px solid var(--border);box-shadow:var(--shadow-md)">
+            <form id="enquiry-form" onsubmit="event.preventDefault(); alert('Thank you for your enquiry. A Vanguard senior partner will contact you shortly.');">
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin-bottom:1.5rem">
+                <div>
+                  <label style="display:block;font-weight:600;margin-bottom:0.5rem;font-size:0.9rem">Full Name *</label>
+                  <input type="text" required placeholder="e.g. Robert Vance" style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary)" />
+                </div>
+                <div>
+                  <label style="display:block;font-weight:600;margin-bottom:0.5rem;font-size:0.9rem">Corporate Email *</label>
+                  <input type="email" required placeholder="e.g. r.vance@enterprise.com" style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary)" />
+                </div>
+              </div>
+
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin-bottom:1.5rem">
+                <div>
+                  <label style="display:block;font-weight:600;margin-bottom:0.5rem;font-size:0.9rem">Title & Organization *</label>
+                  <input type="text" required placeholder="e.g. Chief Operating Officer" style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary)" />
+                </div>
+                <div>
+                  <label style="display:block;font-weight:600;margin-bottom:0.5rem;font-size:0.9rem">Direct Phone</label>
+                  <input type="tel" placeholder="+1 (555) 000-0000" style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary)" />
+                </div>
+              </div>
+
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin-bottom:1.5rem">
+                <div>
+                  <label style="display:block;font-weight:600;margin-bottom:0.5rem;font-size:0.9rem">Core Operational Challenge *</label>
+                  <select required style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary)">
+                    <option value="">Select Primary Focus Area</option>
+                    <option value="Process Optimization">Process Optimization & Lean Execution</option>
+                    <option value="Supply Chain">Supply Chain Consulting & Logistics</option>
+                    <option value="Change Management">Change Management & Governance</option>
+                    <option value="Operational Due Diligence">Operational Due Diligence / M&A</option>
+                    <option value="Quality & Yield">Quality & Yield Enhancement</option>
+                    <option value="Digital Operations">Digital Operations & Automation</option>
+                  </select>
+                </div>
+                <div>
+                  <label style="display:block;font-weight:600;margin-bottom:0.5rem;font-size:0.9rem">Annual Revenue Tier</label>
+                  <select style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary)">
+                    <option value="">Select Enterprise Tier</option>
+                    <option value="Under $50M">Under $50 Million</option>
+                    <option value="$50M - $250M">$50M – $250 Million</option>
+                    <option value="$250M - $1B">$250M – $1 Billion</option>
+                    <option value="$1B+">$1 Billion+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div style="margin-bottom:1.5rem">
+                <label style="display:block;font-weight:600;margin-bottom:0.5rem;font-size:0.9rem">Operational Context & Objectives</label>
+                <textarea rows="4" placeholder="Describe your operational goals, bottlenecks, or timeline targets..." style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary);resize:vertical"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg w-full" style="width:100%;justify-content:center">
+                <i class="ri-send-plane-line"></i> Submit Executive Operational Enquiry
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand">
+            <div class="brand-logo"><i class="ri-line-chart-line"></i></div>
+            <div class="brand-name">Vanguard <span>Operations</span></div>
+          </a>
+          <p class="footer-desc">Premier management consulting firm specializing in operational transformation, process optimization, supply chain consulting, and enterprise change management.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social" aria-label="LinkedIn"><i class="ri-linkedin-line"></i></a>
+            <a href="#" class="footer-social" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+            <a href="#" class="footer-social" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">Practice Areas</div>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">Process Optimization</a>
+            <a href="services.html" class="footer-link">Supply Chain Consulting</a>
+            <a href="services.html" class="footer-link">Change Management</a>
+            <a href="services.html" class="footer-link">Operational Due Diligence</a>
+            <a href="services.html" class="footer-link">Lean Six Sigma Execution</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">Company</div>
+          <div class="footer-links">
+            <a href="../index.html" class="footer-link">Home</a>
+            <a href="services.html" class="footer-link">Services</a>
+            <a href="case-studies.html" class="footer-link">Case Studies</a>
+            <a href="industries.html" class="footer-link">Industries Served</a>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">Global HQ</div>
+          <div class="footer-links">
+            <div class="footer-contact-item"><i class="ri-map-pin-line"></i><span>575 Fifth Avenue, 28th Floor, New York, NY 10017</span></div>
+            <div class="footer-contact-item"><i class="ri-phone-line"></i><span>+1 (212) 555-0190</span></div>
+            <div class="footer-contact-item"><i class="ri-mail-line"></i><span>advisory@vanguardops.com</span></div>
+            <div class="footer-contact-item"><i class="ri-time-line"></i><span>Mon–Fri: 8am – 6pm EST</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Vanguard Operations Group. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Advisory</a>
+          <a href="#">Security Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
