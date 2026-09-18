@@ -116,34 +116,34 @@
           </div>
 
           <!-- Form -->
-          <div class="contact-form-wrap" style="background:var(--bg-card);padding:2.5rem;border-radius:var(--radius-lg);border:1px solid var(--border);box-shadow:var(--shadow-md)">
+          <div class="contact-form-wrap">
             <form id="enquiry-form" onsubmit="event.preventDefault(); alert('Thank you for your enquiry. A Vanguard senior partner will contact you shortly.');">
-              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin-bottom:1.5rem">
+              <div class="form-row">
                 <div>
                   <label style="display:block;font-weight:600;margin-bottom:0.5rem;font-size:0.9rem">Full Name *</label>
-                  <input type="text" required placeholder="e.g. Robert Vance" style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary)" />
+                  <input type="text" required placeholder="e.g. Robert Vance" style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary);box-sizing:border-box" />
                 </div>
                 <div>
                   <label style="display:block;font-weight:600;margin-bottom:0.5rem;font-size:0.9rem">Corporate Email *</label>
-                  <input type="email" required placeholder="e.g. r.vance@enterprise.com" style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary)" />
+                  <input type="email" required placeholder="e.g. r.vance@enterprise.com" style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary);box-sizing:border-box" />
                 </div>
               </div>
 
-              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin-bottom:1.5rem">
+              <div class="form-row">
                 <div>
                   <label style="display:block;font-weight:600;margin-bottom:0.5rem;font-size:0.9rem">Title & Organization *</label>
-                  <input type="text" required placeholder="e.g. Chief Operating Officer" style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary)" />
+                  <input type="text" required placeholder="e.g. Chief Operating Officer" style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary);box-sizing:border-box" />
                 </div>
                 <div>
                   <label style="display:block;font-weight:600;margin-bottom:0.5rem;font-size:0.9rem">Direct Phone</label>
-                  <input type="tel" placeholder="+1 (555) 000-0000" style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary)" />
+                  <input type="tel" placeholder="+1 (555) 000-0000" style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary);box-sizing:border-box" />
                 </div>
               </div>
 
-              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin-bottom:1.5rem">
+              <div class="form-row">
                 <div>
                   <label style="display:block;font-weight:600;margin-bottom:0.5rem;font-size:0.9rem">Core Operational Challenge *</label>
-                  <select required style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary)">
+                  <select required style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary);box-sizing:border-box">
                     <option value="">Select Primary Focus Area</option>
                     <option value="Process Optimization">Process Optimization & Lean Execution</option>
                     <option value="Supply Chain">Supply Chain Consulting & Logistics</option>
@@ -155,7 +155,7 @@
                 </div>
                 <div>
                   <label style="display:block;font-weight:600;margin-bottom:0.5rem;font-size:0.9rem">Annual Revenue Tier</label>
-                  <select style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary)">
+                  <select style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary);box-sizing:border-box">
                     <option value="">Select Enterprise Tier</option>
                     <option value="Under $50M">Under $50 Million</option>
                     <option value="$50M - $250M">$50M – $250 Million</option>
@@ -167,7 +167,7 @@
 
               <div style="margin-bottom:1.5rem">
                 <label style="display:block;font-weight:600;margin-bottom:0.5rem;font-size:0.9rem">Operational Context & Objectives</label>
-                <textarea rows="4" placeholder="Describe your operational goals, bottlenecks, or timeline targets..." style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary);resize:vertical"></textarea>
+                <textarea rows="4" placeholder="Describe your operational goals, bottlenecks, or timeline targets..." style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-primary);color:var(--text-primary);resize:vertical;box-sizing:border-box"></textarea>
               </div>
 
               <button type="submit" class="btn btn-primary btn-lg w-full" style="width:100%;justify-content:center">
@@ -177,6 +177,38 @@
           </div>
 
         </div>
+      </div>
+    </section>
+
+    <!-- ── SECTION 2: Global Advisory Footprint & Location Map ── -->
+    <section class="section map-section reveal" style="background:var(--bg-secondary);padding-top:4rem;padding-bottom:5rem">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Global Advisory Locations</span>
+          <h2 class="section-title">Our Operational <em style="font-style:italic;color:var(--gold)">Headquarters & Hubs</em></h2>
+          <div class="divider-gold"></div>
+          <p class="section-subtitle">Visit our executive offices or request an on-site diagnostic deployment anywhere across North America, Europe, and Asia-Pacific.</p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr;gap:2rem;margin-bottom:2.5rem">
+          <!-- Interactive Map Container -->
+          <div style="position:relative;width:100%;height:450px;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow-md)">
+            <iframe 
+              title="Vanguard Operations Group Global HQ Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.217316773539!2d-73.98064662342468!3d40.75510617138541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590076a5b677%3A0x7c7320b30d3170e!2s575%205th%20Ave%2C%20New%20York%2C%20NY%2010017!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus"
+              width="100%" 
+              height="100%" 
+              style="border:0;filter:contrast(1.05) saturate(1.1);" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Global Office Cards Grid -->
+        
+
       </div>
     </section>
 

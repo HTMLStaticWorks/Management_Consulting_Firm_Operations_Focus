@@ -768,7 +768,7 @@ main {
 
 .hero-stat-num {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.25rem, 2.2vw, 1.65rem);
   font-weight: 520;
   color: var(--gold);
   line-height: 1;
@@ -776,7 +776,7 @@ main {
 }
 
 .hero-stat-label {
-  font-size: clamp(0.75rem, 1.5vw, 1rem);
+  font-size: clamp(0.7rem, 1.1vw, 0.8rem);
   font-weight: 400;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1756,11 +1756,11 @@ main {
 
 .brewing-step-content h3 {
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 520;
   color: var(--text-primary);
-  margin-bottom: 0.75rem;
-  min-height: 2.6em;
+  margin-bottom: 0.35rem;
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3580,6 +3580,7 @@ main {
   .team-img {
     height: 350px;
   }
+
   .compliance-section .feature-img-wrap {
     height: 200px;
   }
@@ -3596,14 +3597,17 @@ main {
     --section-pad: 80px;
   }
 
-  h1, .hero h1, .shop-hero h1 {
+  h1,
+  .hero h1,
+  .shop-hero h1 {
     font-size: clamp(2.4rem, 4.5vw, 3rem);
     font-weight: 650;
     letter-spacing: -0.02em;
     line-height: 1.15;
   }
 
-  h2, .section-title {
+  h2,
+  .section-title {
     font-size: clamp(1.8rem, 3.5vw, 2.1rem);
     font-weight: 600;
     letter-spacing: -0.015em;
@@ -3616,26 +3620,36 @@ main {
     line-height: 1.25;
   }
 
-  h4, h5, h6 {
+  h4,
+  h5,
+  h6 {
     font-size: clamp(1.1rem, 1.8vw, 1.25rem);
     font-weight: 550;
   }
 
   /* Card inside heading sizes */
-  .product-card-body h3, 
-  .feature-card h3, 
-  .shop-card-body h3, 
+  .product-card-body h3,
+  .feature-card h3,
+  .shop-card-body h3,
   .blog-card-body h3 {
     font-size: 1.4rem;
   }
 
-  p, .hero-desc, .section p, .section-subtitle, .about-desc, .step-desc, .blog-desc, .footer-desc {
+  p,
+  .hero-desc,
+  .section p,
+  .section-subtitle,
+  .about-desc,
+  .step-desc,
+  .blog-desc,
+  .footer-desc {
     font-size: 0.95rem;
     font-weight: 400;
     line-height: 1.7;
   }
 
-  .section-label, .hero-eyebrow {
+  .section-label,
+  .hero-eyebrow {
     font-size: 0.85rem;
     letter-spacing: 0.15em;
     margin-bottom: 0.75rem;
@@ -3652,7 +3666,7 @@ main {
     font-size: 0.95rem;
     padding: 0.75rem 1.75rem;
   }
-  
+
   .btn-lg {
     padding: 0.95rem 2.2rem;
     font-size: 1.05rem;
@@ -3664,7 +3678,7 @@ main {
   }
 
   .hero-stat-num {
-    font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+    font-size: clamp(1.3rem, 2.2vw, 1.55rem);
   }
 
   /* Spacing and alignments */
@@ -3686,12 +3700,15 @@ main {
     --section-pad: 90px;
   }
 
-  h1, .hero h1, .shop-hero h1 {
+  h1,
+  .hero h1,
+  .shop-hero h1 {
     font-size: clamp(2.8rem, 4.5vw, 3.5rem);
     font-weight: 650;
   }
 
-  h2, .section-title {
+  h2,
+  .section-title {
     font-size: clamp(2rem, 3.5vw, 2.4rem);
     font-weight: 600;
   }
@@ -3701,24 +3718,34 @@ main {
     font-weight: 580;
   }
 
-  h4, h5, h6 {
+  h4,
+  h5,
+  h6 {
     font-size: clamp(1.15rem, 1.8vw, 1.3rem);
     font-weight: 550;
   }
 
   /* Card inside heading sizes */
-  .product-card-body h3, 
-  .feature-card h3, 
-  .shop-card-body h3, 
+  .product-card-body h3,
+  .feature-card h3,
+  .shop-card-body h3,
   .blog-card-body h3 {
     font-size: 1.5rem;
   }
 
-  p, .hero-desc, .section p, .section-subtitle, .about-desc, .step-desc, .blog-desc, .footer-desc {
+  p,
+  .hero-desc,
+  .section p,
+  .section-subtitle,
+  .about-desc,
+  .step-desc,
+  .blog-desc,
+  .footer-desc {
     font-size: 1rem;
   }
 
-  .section-label, .hero-eyebrow {
+  .section-label,
+  .hero-eyebrow {
     font-size: 0.9rem;
     letter-spacing: 0.18em;
   }
@@ -3739,7 +3766,7 @@ main {
   }
 
   .hero-stat-num {
-    font-size: clamp(2.2rem, 3.5vw, 2.8rem);
+    font-size: clamp(1.4rem, 2.4vw, 1.65rem);
   }
 }
 
@@ -3752,11 +3779,14 @@ main {
     --section-pad: 105px;
   }
 
-  h1, .hero h1, .shop-hero h1 {
+  h1,
+  .hero h1,
+  .shop-hero h1 {
     font-size: 3.8rem;
   }
 
-  h2, .section-title {
+  h2,
+  .section-title {
     font-size: 2.6rem;
   }
 
@@ -3764,23 +3794,33 @@ main {
     font-size: 1.8rem;
   }
 
-  h4, h5, h6 {
+  h4,
+  h5,
+  h6 {
     font-size: 1.35rem;
   }
 
   /* Card inside heading sizes */
-  .product-card-body h3, 
-  .feature-card h3, 
-  .shop-card-body h3, 
+  .product-card-body h3,
+  .feature-card h3,
+  .shop-card-body h3,
   .blog-card-body h3 {
     font-size: 1.6rem;
   }
 
-  p, .hero-desc, .section p, .section-subtitle, .about-desc, .step-desc, .blog-desc, .footer-desc {
+  p,
+  .hero-desc,
+  .section p,
+  .section-subtitle,
+  .about-desc,
+  .step-desc,
+  .blog-desc,
+  .footer-desc {
     font-size: 1.05rem;
   }
 
-  .section-label, .hero-eyebrow {
+  .section-label,
+  .hero-eyebrow {
     font-size: 0.95rem;
     letter-spacing: 0.2em;
   }
@@ -3791,6 +3831,265 @@ main {
   }
 
   .hero-stat-num {
-    font-size: 3rem;
+    font-size: 1.75rem;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE ENHANCEMENTS FOR TABLET (768px) & MOBILE (368px)
+   ============================================================ */
+
+/* 1. Global Page Overflow Containment for Mobile 368px View */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.header {
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+.header-inner {
+  width: 100%;
+  max-width: 1240px;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+}
+
+/* Header & Hamburger adjustments for small screens (368px view) */
+@media (max-width: 480px) {
+  .header-inner {
+    padding: 0 0.85rem;
+  }
+
+  .brand {
+    gap: 0.4rem;
+    max-width: calc(100% - 48px);
+  }
+
+  .brand-logo {
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+    flex-shrink: 0;
+  }
+
+  .brand-name {
+    font-size: 1.05rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hamburger {
+    width: 26px;
+    height: 18px;
+    margin-left: auto;
+  }
+}
+
+/* 2. Impact Metrics Grid (Case Studies Page) */
+.impact-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.impact-metric-card {
+  background: var(--bg-card);
+  padding: 2rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.impact-metric-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.impact-metric-num {
+  display: block;
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.impact-metric-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.35;
+}
+
+@media (max-width: 1023px) and (min-width: 601px) {
+  .impact-metrics-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2x2 grid layout on tablet 768px */
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .impact-metrics-grid {
+    grid-template-columns: 1fr; /* Uniform 1 column layout on mobile 368px */
+    gap: 1rem;
+  }
+  .impact-metric-card {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* 3. Operational Industry Focus Grid (Industries Served Page) */
+@media (min-width: 601px) and (max-width: 1023px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr) !important; /* Force 2x2 / 2-col grid on 768px tablet */
+    gap: 1.5rem !important;
+  }
+
+  .products-grid .product-card:nth-child(3) {
+    grid-column: auto !important; /* Remove 3rd card full-width span */
+    max-width: 100% !important;
+  }
+}
+
+.product-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.product-card-body h3 {
+  min-height: auto;
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.2rem, 2.2vw, 1.45rem);
+}
+
+/* 4. Contact Page Form & Card Responsive Fixes */
+.contact-grid {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-info {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.contact-item-text {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.contact-item-text strong,
+.contact-item-text span {
+  display: block;
+  width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.contact-form-wrap {
+  background: var(--bg-card);
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-item {
+    padding: 1rem 0.75rem;
+    gap: 0.75rem;
+  }
+
+  .contact-item-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+  }
+
+  .contact-item-text strong {
+    font-size: 0.85rem;
+  }
+
+  .contact-item-text span {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .contact-form-wrap {
+    padding: 1rem 0.75rem !important;
+    border-radius: var(--radius-md);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
   }
 }

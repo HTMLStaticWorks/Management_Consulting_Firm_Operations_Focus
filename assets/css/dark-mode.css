@@ -150,3 +150,37 @@
     background: linear-gradient(90deg, var(--gold-light), #ffffff) !important;
     opacity: 0.9;
 }
+
+/* Fix page hero and shop hero backgrounds and text contrast in dark mode */
+[data-theme="dark"] .page-hero,
+[data-theme="dark"] .shop-hero {
+    background: linear-gradient(160deg, #0B132B 0%, #1C2541 100%) !important;
+}
+
+[data-theme="dark"] .page-hero h1,
+[data-theme="dark"] .shop-hero h1 {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .page-hero p,
+[data-theme="dark"] .shop-hero p {
+    color: #CBD5E1 !important;
+}
+
+/* Fix eyebrow heading and section-label contrast issues in dark mode */
+[data-theme="dark"] .section-label,
+[data-theme="dark"] .hero-eyebrow,
+[data-theme="dark"] .page-hero .section-label,
+[data-theme="dark"] .shop-hero .section-label,
+[data-theme="dark"] span.section-label {
+    color: #60A5FA !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.18em;
+}
+
+/* Dark mode map styling */
+[data-theme="dark"] .map-section iframe {
+    filter: invert(90%) hue-rotate(180deg) contrast(1.1) brightness(0.9) !important;
+}
+
+
