@@ -37,7 +37,7 @@
 <header class="header">
   <div class="header-inner">
     <a href="../index.html" class="brand">
-      <div class="brand-logo"><i class="ri-line-chart-line"></i></div>
+      <div class="brand-logo"><img src="../assets/images/logo-icon.svg" alt="Vanguard Operations Logo" width="40" height="40" /></div>
       <div><span class="brand-name">Vanguard <span>Operations</span></span></div>
     </a>
     <nav class="nav-desktop">
@@ -75,8 +75,8 @@
   <!-- Hero -->
   <section class="page-hero" style="padding-top:calc(var(--header-h) + 3rem)">
     <div class="container">
-      <span class="section-label" style="color:var(--gold-light)">Proven Results</span>
-      <h1>Operational Transformation <em style="font-style:italic;color:var(--gold-light)">Case Studies</em></h1>
+      <span class="section-label" style="color:var(--gold)">Proven Results</span>
+      <h1>Operational Transformation <em style="font-style:italic;color:var(--gold)">Case Studies</em></h1>
       <p>Real-world client outcomes: How Vanguard delivered quantifiable ROI, margin growth, and supply chain resilience across global enterprise operations.</p>
     </div>
   </section>
@@ -223,17 +223,91 @@
     </div>
   </section>
 
-  <!-- ── SECTION 3: CTA ── -->
-  <section class="cta-section reveal">
+  <!-- ── SECTION 3: Interactive Turnaround ROI Estimator (Pre-Footer) ── -->
+  <section class="prefooter-roi-calc reveal">
     <div class="container">
-      <span class="section-label" style="opacity:0.8">Executive Action</span>
-      <h2>Schedule a Custom Operational Audit <br>For Your Enterprise</h2>
-      <p>Contact Vanguard's practice leaders to evaluate how our proven methodologies apply to your operational footprint.</p>
-      <div class="cta-btns">
-        <a href="contact.html" class="btn btn-dark btn-lg"><i class="ri-mail-send-line"></i> Contact Our Partners</a>
+      <div class="roi-calc-card">
+        <div class="roi-calc-content">
+          <span class="standard-tag"><i class="ri-calculator-line"></i> Turnaround Value Simulator</span>
+          <h2>Model Your Facility's <br><em style="font-style:italic;color:var(--gold)">Transformation Potential</em></h2>
+          <p>
+            Select your enterprise or operating unit revenue scale to project empirical EBITDA unlock, working capital release, and sprint payback based on 350+ historical Vanguard transformations.
+          </p>
+
+          <div style="font-size:0.8rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.75rem">
+            Select Facility / Business Unit Revenue Tier:
+          </div>
+          <div class="tier-select-btns" id="roi-tier-selector">
+            <button class="tier-btn active" data-ebitda="$2.4M – $4.1M" data-wc="$3.2M – $5.5M" data-payback="75 Days" data-cycle="32%" type="button">$25M – $50M</button>
+            <button class="tier-btn" data-ebitda="$5.8M – $9.2M" data-wc="$7.5M – $12.0M" data-payback="82 Days" data-cycle="35%" type="button">$50M – $150M</button>
+            <button class="tier-btn" data-ebitda="$14.5M – $22.0M" data-wc="$18.0M – $28.5M" data-payback="90 Days" data-cycle="38%" type="button">$150M – $500M</button>
+            <button class="tier-btn" data-ebitda="$38M – $65M+" data-wc="$45M – $80M+" data-payback="90 Days" data-cycle="42%" type="button">$500M+ Enterprise</button>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:0.6rem;font-size:0.82rem;color:var(--text-muted)">
+            <i class="ri-information-line" style="color:var(--gold)"></i>
+            Empirical benchmark ranges derived from audited post-turnaround client financials.
+          </div>
+        </div>
+
+        <div class="roi-calc-display">
+          <div class="roi-display-header">
+            <span><i class="ri-shield-flash-line"></i> Projected Turnaround Impact</span>
+            <span class="roi-badge-pill">90-Day Sprint</span>
+          </div>
+
+          <div class="roi-metrics-preview">
+            <div class="roi-stat-box">
+              <div class="roi-stat-val" id="roi-ebitda-val">$2.4M – $4.1M</div>
+              <div class="roi-stat-label">Estimated EBITDA Expansion</div>
+            </div>
+            <div class="roi-stat-box">
+              <div class="roi-stat-val" id="roi-wc-val">$3.2M – $5.5M</div>
+              <div class="roi-stat-label">Working Capital Released</div>
+            </div>
+            <div class="roi-stat-box">
+              <div class="roi-stat-val" id="roi-payback-val">75 Days</div>
+              <div class="roi-stat-label">Average Sprint Payback</div>
+            </div>
+            <div class="roi-stat-box">
+              <div class="roi-stat-val" id="roi-cycle-val">32%</div>
+              <div class="roi-stat-label">Cycle Time Compression</div>
+            </div>
+          </div>
+
+          <div class="roi-calc-actions">
+            <a href="enquire.html" class="btn btn-primary btn-sm" style="flex-grow:1;justify-content:center">
+              <i class="ri-file-chart-line"></i> Request Custom Plant Model
+            </a>
+            <a href="contact.html" class="btn btn-secondary btn-sm">
+              <i class="ri-phone-line"></i> Brief Senior Partner
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tierBtns = document.querySelectorAll('#roi-tier-selector .tier-btn');
+      const ebitdaEl = document.getElementById('roi-ebitda-val');
+      const wcEl = document.getElementById('roi-wc-val');
+      const paybackEl = document.getElementById('roi-payback-val');
+      const cycleEl = document.getElementById('roi-cycle-val');
+
+      tierBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tierBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          if (ebitdaEl) ebitdaEl.textContent = btn.getAttribute('data-ebitda');
+          if (wcEl) wcEl.textContent = btn.getAttribute('data-wc');
+          if (paybackEl) paybackEl.textContent = btn.getAttribute('data-payback');
+          if (cycleEl) cycleEl.textContent = btn.getAttribute('data-cycle');
+        });
+      });
+    });
+  </script>
 
 </main>
 
@@ -243,7 +317,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="../index.html" class="brand">
-          <div class="brand-logo"><i class="ri-line-chart-line"></i></div>
+          <div class="brand-logo"><img src="../assets/images/logo-icon.svg" alt="Vanguard Operations Logo" width="40" height="40" /></div>
           <div class="brand-name">Vanguard <span>Operations</span></div>
         </a>
         <p class="footer-desc">Premier management consulting firm specializing in operational transformation, process optimization, supply chain consulting, and enterprise change management.</p>

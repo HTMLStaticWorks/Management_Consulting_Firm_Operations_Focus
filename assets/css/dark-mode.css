@@ -162,6 +162,11 @@
     color: #F8FAFC !important;
 }
 
+[data-theme="dark"] .page-hero h1 em,
+[data-theme="dark"] .shop-hero h1 em {
+    color: #60A5FA !important;
+}
+
 [data-theme="dark"] .page-hero p,
 [data-theme="dark"] .shop-hero p {
     color: #CBD5E1 !important;
@@ -183,4 +188,140 @@
     filter: invert(90%) hue-rotate(180deg) contrast(1.1) brightness(0.9) !important;
 }
 
+/* Dark mode for Executive Guidelines & Consulting Standards */
+[data-theme="dark"] .executive-guidelines-section {
+    background: var(--bg-secondary) !important;
+}
+
+[data-theme="dark"] .guideline-card {
+    background: var(--bg-card) !important;
+    border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .guideline-badge {
+    background: rgba(37, 99, 235, 0.2) !important;
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .guidelines-action-card {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%) !important;
+    border: 1px solid rgba(59, 130, 246, 0.3) !important;
+}
+
+[data-theme="dark"] .consulting-standards-section {
+    background: var(--bg-primary) !important;
+}
+
+[data-theme="dark"] .standard-card {
+    background: var(--bg-card) !important;
+    border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .standard-metric {
+    color: #60A5FA !important;
+}
+
+/* Dark mode for turnaround visual and bespoke pre-footer cards */
+[data-theme="dark"] .turnaround-img-card {
+    background: var(--bg-card);
+    border-color: var(--border);
+}
+
+[data-theme="dark"] .guarantee-showcase-box,
+[data-theme="dark"] .roundtable-quote-card,
+[data-theme="dark"] .service-matrix-card,
+[data-theme="dark"] .service-matcher-banner,
+[data-theme="dark"] .roi-calc-card,
+[data-theme="dark"] .benchmark-portal-card,
+[data-theme="dark"] .sla-protocol-card {
+    background: var(--bg-card) !important;
+    border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .guarantee-pill-card,
+[data-theme="dark"] .sector-kpi-card,
+[data-theme="dark"] .sla-step-item {
+    background: var(--bg-secondary) !important;
+    border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .sla-urgent-hotline {
+    background: var(--bg-primary) !important;
+    border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .prefooter-executive-command {
+    background: radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.15) 0%, transparent 60%),
+                var(--bg-primary) !important;
+    border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .exec-action-card,
+[data-theme="dark"] .exec-milestone-item {
+    background: var(--bg-card) !important;
+    border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .exec-trust-strip {
+    border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .prefooter-roi-calc {
+    background: var(--bg-primary) !important;
+    border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .roi-calc-display {
+    background: var(--bg-card) !important;
+    border-color: var(--border) !important;
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .roi-stat-box {
+    background: var(--bg-secondary) !important;
+    border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .roi-stat-val {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .roi-stat-label {
+    color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .roi-badge-pill,
+[data-theme="dark"] .roi-display-header span:last-child {
+    background: rgba(96, 165, 250, 0.15) !important;
+    color: #60A5FA !important;
+    border-color: rgba(96, 165, 250, 0.3) !important;
+}
+
+/* Home 2 Hero v2 Dark Mode */
+[data-theme="dark"] .hero-v2-section {
+    background: radial-gradient(ellipse at 80% 25%, rgba(59, 130, 246, 0.12) 0%, transparent 60%),
+                linear-gradient(180deg, var(--bg-primary) 0%, #0c1424 100%) !important;
+}
+
+[data-theme="dark"] .hero-v2-badge,
+[data-theme="dark"] .hero-v2-image-card,
+[data-theme="dark"] .hero-v2-metrics-bar,
+[data-theme="dark"] .v2-floating-badge {
+    background: var(--bg-card) !important;
+    border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .v2-floating-card {
+    background: rgba(30, 41, 59, 0.94) !important;
+    border-color: rgba(59, 130, 246, 0.35) !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme="dark"] .v2-float-value {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .hero-v2-metric-cell:hover {
+    background: var(--bg-secondary) !important;
+}
 
